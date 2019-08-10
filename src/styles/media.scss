@@ -1,0 +1,12 @@
+@media screen and (max-width: 1200px) {
+  .modal-wrapper {
+    .modal-body {
+      margin-top: 0;
+      height: 100%;
+      overflow: auto;
+    }
+    .modal-body, .modal-body-open {
+      transform: translateY(0px) !important;
+    }
+  }
+}

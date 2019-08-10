@@ -1,0 +1,126 @@
+.modal-wrapper {
+  position: absolute;
+  top: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0);
+  visibility: hidden;
+  transition: all .1s linear;
+}
+.open {
+  opacity: 1;
+  visibility: visible;
+  background-color: rgba(0, 0, 0, .5);
+  transition: all .2s linear;
+}
+path {
+  cursor: pointer;
+}
+
+.modal-body {
+  cursor: default;
+  max-width: 600px;
+  width: 100%;
+  height: 700px;
+  margin: auto;
+  margin-top: 20px;
+  border-radius: 20px;
+  border-top-right-radius: 0;
+  visibility: hidden;
+  background-color: rgba(231, 239, 236, 0);
+  transform: translateY(20px);
+  transition: all .2s linear;
+  img {
+    width: 100%;
+    max-height: 392px;
+  }
+  .details {
+    display: flex;
+    overflow: auto;
+    height: 170px;
+  }
+  .column {
+    font-size: 18px;
+    margin-right: 40px;
+  }
+  p {
+    line-height: 22px;
+  }
+  .name {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 22px;
+  }
+}
+
+.modal-body-header {
+  padding-top: 17px;
+  padding-left: 15px;
+  box-sizing: border-box;
+  height: 50px;
+  background: #41b883;
+  border-top-left-radius: 20px;
+  p {
+    color: white;
+    font-weight: bold;
+  }
+}
+.modal-country-description {
+  color: #35495e;
+  height: 280px;
+  box-sizing: border-box;
+  padding-left: 15px;
+  overflow: hidden;
+  .more-info {
+    margin-top: 7px;
+    a {
+      color: #35495e;
+    }
+  }
+}
+.modal-body-open {
+  visibility: visible;
+  transform: translateY(50px);
+  background-color: rgba(231, 239, 236, 1);
+  transition: all .2s linear;
+}
+.menu-wrapper {
+  position: absolute;
+  z-index: 3;
+  top: 10px;
+  right: 10px;
+  > div {
+    width: 45px;
+    height: 25px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover, &:focus {
+      outline: none;
+    }
+  }
+}
+.line {
+  transition: all 300ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.menu-item-open {
+  .line:nth-child(1) {
+    transform: rotate(45deg) translate(9px, 6px);
+  }
+  .line:nth-child(2) {
+    visibility: hidden;
+  }
+  .line:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -4px);
+  }
+}
+.line {
+  height: 4px;
+  width: 30px;
+  background: rgba(255,105,111, 1);
+}

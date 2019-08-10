@@ -1,0 +1,30 @@
+body {
+  background: url('../assets/zvezdnaia_pyl_mlechnyj_put_zvezdnoe_nebo_126281_1920x1080.jpg') no-repeat;
+  background-size: cover;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  height: 100vh;
+}
+
+.map-wrapper {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+.map {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+}
+
+.credits {
+
+  position: absolute;
+  z-index: 2;
+  bottom: 15px;
+  right: 15px;
+  a {
+    display: inline-block;
+    margin-left: 20px;
+    line-height: 22px;
+    color: #ff696f;
+  }
+}
